@@ -1,0 +1,98 @@
+h2{
+	color:black;	
+	text-align:left;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+h1{
+	text-align:center;
+	font-weight:bold;
+	font-size:250%;
+	color:#F9F900;
+}
+
+h4{
+	text-align:center;
+	color:gray;
+	font-size:small;
+}
+
+a{
+	font-size:x-large;
+	font-weight:bold;
+	color:black;
+	text-decoration:none;
+	transition:color 0.8s;
+}
+
+a:hover{
+	text-decoration:none;
+	color:#F75000;
+}
+
+header{
+	color:yellow;
+	padding:200px;
+	background-image: url(./2.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.title{
+	font-size:x-large;
+	font-weight:bold;
+	color:black;
+	text-decoration:none;
+	top:0px;
+	transition:color 0.8s;
+	position:relative;
+}
+
+.button {
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	
+}
+
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	
+}
+
+.blue {
+	color: #d9eef7;
+	border: solid 1px;
+	background: transparent;
+	position:absolute;
+	top:50px;
+}
+
+.blue:hover {
+	background: transparent;
+}
+
+.blue:active {
+	color: transparent;
+}
+
+.b1{
+	left:50px;
+}
+
+.b2{
+	left:200px;
+}
