@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<body>
+
+<link rel="stylesheet" href="./project1.css">
+<meta charset="UTF-8">
+
+<style>
+  .content{width:90%;  height:800px;  border:1px;}
+  .xle{width:25%;  height:800px;  border:1px;  float:left;}
+  .tian{width:65%;  height:20px;  border-bottom:1px;  float:left;}
+  .rig{width:65%;  height:780px;  border-bottom:1px;  float:left;}
+</style>
+	
+
+<header>
+	<a href="#" class="button blue b1" onclick="javascript:window.location.href='./index.html'">主页</a> 
+	<a href="#" class="button blue b2" onclick="javascript:window.location.href='./info.html'">关于我</a>
+	<h1>BLOG 3</h1>
+</header>
+
+<div class="content">
+	<div class="xle"></div>
+	<div class="tian"></div>
+	<div class="rig">
+		<h2 style="text-decoration:none; text-align:center">基于Express框架的后端服务搭建</h2>
+		<h5 style="text-align:center">2019.07.11</h5>
+		<p style="text-indent:2em">今天完成了web前端课程的基础实验四，内容主要是运用Express框架实现静态文件访问和API接口，实验过程中遇到的一些问题整理如下</p>
+		<ol>
+			<li>基本结构</li>
+			<p style="text-indent:2em">静态文件访问通过express.static设置文件路径；对于不同类型的请求，通过app.post/get/delete实现，req获取请求，res进行响应</p>
+			
+			<li>数据获取</li>
+			<p style="text-indent:2em">对于数据的获取，因为传入的数据类型为'multipart/form-data',因此需要调用中间件multer。对于post请求，用req.body获取传入内容，delete和get请求用req.query获取传入数据</p>
+		
+			<li>信息返回</li>
+			<p style="text-indent:2em">返回的内容通过res设置，主要用到的有res.status设置条件码，res.set设置返回的Content-Type，res.json()/res.end()/res.send()作为返回的结束语句</p>
+		</ol>
+	</div>
+</div>
+
+
+</body>
+</html>
